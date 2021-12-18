@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+</head>
+<body>
+<div class="blank">
+    <div class="flip-container">
+        <div class="card">
+            <div class="front" id="card-front">
+                <div class="focus-field"></div>
+                <img src="img/cheap.PNG" alt="" id="cheap">
+                <img src="img/mc_vrt_opt_rev_53_2x.png" alt="" id="logo">
+                <p id="card-number" class="">#### #### #### ####</p>
+                <p id="card-user" class=""></p>
+                <p id="date" class=""></p>
+            </div>
+            <div class="reverse back" id="card-reverse">
+                <div class="reverse black-line"></div>
+                <p id="card-cvv"></p>
+                <img src="img/mc_vrt_opt_rev_53_2x.png" alt="" class="reverse" id="logo-reverse">
+            </div>
+        </div>
+    </div>
+    <form action="">
+        <input type="number" class="inner-blank" id="number" placeholder="Card Number" style="outline: none" value="" maxlength="16" max="16">
+        <input type="text" class="inner-blank" id="name" placeholder="User Name" style="outline: none">
+        <p id="string-3">
+            <select name="month" class="inner-blank" id="month">
+                <option value="0">Month</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year" class="inner-blank" id="year">
+                <option value="0">Year</option>
+                <option value="1">2022</option>
+                <option value="2">2023</option>
+                <option value="3">2024</option>
+                <option value="4">2025</option>
+                <option value="5">2026</option>
+                <option value="6">2027</option>
+                <option value="7">2028</option>
+                <option value="8">2029</option>
+                <option value="9">2030</option>
+                <option value="10">2031</option>
+            </select>
+            <input type="text" class="inner-blank" id="cvv" placeholder="CVV" style="outline: none">
+        </p>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

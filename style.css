@@ -1,0 +1,165 @@
+body{
+    background-color: lavender;
+}
+.blank{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    /*z-index: 0;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0, 0 10px 10px rgba(0,0,0,0.22), 0 14px 28px rgba(0,0,0,0.25)
+}
+.inner-blank{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid gray 1px;
+}
+.inner-blank:focus{
+    border: 1px solid cornflowerblue;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15)
+}
+.focus-field{
+    display: none;
+}
+
+.card{
+    width: 258px;
+    height: 162px;
+}
+
+.flip-container {
+    perspective: 1000;
+}
+.flip-container.flip .card {
+    transform: rotateY(180deg);
+}
+.card {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+}
+.back {
+    transform: rotateY(180deg);
+}
+/**/
+#card-front{
+    width: 258px;
+    height: 162px;
+    border-radius: 10px;
+    background-image: url("https://techosapien.files.wordpress.com/2014/07/dsc1618.png?w=258&h=162");
+    position: absolute;
+    top: -81px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.30)
+}
+#cheap{
+    width: 37px;
+    height: 30px;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#logo{
+    width: 36px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#card-number{
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/**/
+#card-reverse{
+    height: 162px;
+    position: absolute;
+    top: -81px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.30);
+    background-image: url("https://techosapien.files.wordpress.com/2014/07/dsc1618.png?w=258&h=162");
+    width: 258px;
+    border-radius: 10px;
+}
+.black-line{
+    width: 258px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 35px;
+}
+#logo-reverse{
+    width: 36px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+/**/
+#number{
+    width: 343px;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#name{
+    width: 343px;
+}
+#string-3{
+    width: 350px;
+    /*text-align: justify;*/
+    margin-top: 0;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#month{
+    width: 80px;
+    height: 40px;
+}
+#year{
+    width: 100px;
+    height: 40px;
+}
+#cvv{
+    width: 80px;
+}
+#submit{
+    background-color: #5353d0;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 350px;
+    font-size: 25px;
+    color: white;
+    font-family: inherit;
+}
+form{
+    font-family: Arial;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 10px;
+}

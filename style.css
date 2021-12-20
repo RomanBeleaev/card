@@ -93,6 +93,12 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+#date{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+}
 /**/
 #card-reverse{
     height: 162px;

@@ -15,7 +15,7 @@
                 <img src="img/mc_vrt_opt_rev_53_2x.png" alt="" id="logo">
                 <p id="card-number" class="">#### #### #### ####</p>
                 <p id="card-user" class=""></p>
-                <p id="date" class=""></p>
+                <p id="date" class="">__/__</p>
             </div>
             <div class="reverse back" id="card-reverse">
                 <div class="reverse black-line"></div>
@@ -43,7 +43,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
-            <select name="year" class="inner-blank" id="year">
+            <select name="year" class="inner-blank" id="year" onchange="pushYear()">
                 <option value="0">Year</option>
                 <option value="1">2022</option>
                 <option value="2">2023</option>
